@@ -3,8 +3,8 @@
 <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
           <title>flipkart</title>
 </head>
 <style>
@@ -37,10 +37,14 @@
           }
           .coloum2 > ul > li{
                     display: inline-block;
-                    padding: 10px 0px 0px 50px;
+                    padding: 10px 0px 0px 40px;
                     list-style: none;
 
 
+          /* .coloum2 > ul > button:hover{
+                              background-color: blue !important; 
+
+                     } */
           }
           /* header 1 close */
           .headerh2{
@@ -49,37 +53,146 @@
                     
           }
           .headerh2 > ul > li{
+                    position: relative;
                     display: inline-block;
-                    padding: 10px 50px 0px 0px;
+                    /* padding: 10px 60px 0px 0px; */
+                    width: 130px;
+                    height: 100%;
+                    text-align: center;
           } 
+          .headerh2 > ul > li:hover .submenu{
+                   display: block;
+                  
+                   
+                   
+          }
+           .headerh2 > ul > li:hover .submenu2{
+                   display: block;
+                  
+                   
+                   
+          }
+          .headerh2 > ul > li > a{
+                     text-decoration: none;
+                     color: black;
+          }
+          .headerh2 > ul > li > a > p .icon{
+                    
+                    transition: 0.2s;
+                    font-size: small;
+          }
+          .headerh2 > ul > li:hover .icon{
+                   
+                    transform: rotate(180deg);
+
+
+          }
+          .submenu{
+                    
+                    width: 244px;
+                    position: absolute;
+                    left: -60px;
+                    top:100px;
+                    height: 560px;
+                    background-color: #fff;
+                    display: none ;
+                    transition:all 1s linear !important;
+                     box-shadow: 0px 0px 1px 4px rgba(230, 229, 229, 0.2)
+
+          }
+          /* .box{
+                    width: 244px;
+                    height: 50px;
+
+          } */
+          .submenu > ul > li{
+                    display: block;
+                    width: 244px !important;
+                    list-style: none;
+                    height: 40px !important;
+                    padding-left: 20px;
+                    height: 30px;
+                    transition: all 0.2s linear;
+                   
+                  
+          }
+          .submenu > ul > li > a{
+                 text-decoration: none;
+                 float: inline-start;
+                 padding-top: 8px;
+                 font-size: small;
+          }
+          .submenu > ul > li:hover{
+                    background-color:#F1F2F4;
+                    
+          }
+           .submenu > ul > li:hover .submenu3{
+                    display: block;
+                     
+           } 
+          .submenu2{
+                    width: 244px;
+                    position: absolute;
+                    left: 244px;
+                    top:0px;
+                    display:;
+                    height: 500px;
+                    background-color: #FFFF;
+                    display: none;
+                    box-shadow: 0px 0px 4px 1px rgba(230, 229, 229, 0.2)
+                    
+          }
+          .submenu3{
+                    width: 244px;
+                    position: absolute;
+                    left: 244px;
+                    top:0px;
+                    display:none;
+                    height: 500px;
+                    background-color: #FFFF;
+                    display: none;
+                    box-shadow: 0px 0px 4px 1px rgba(230, 229, 229, 0.2)
+                    
+          }
+          .submenu2 > ul > li{
+                list-style:none;
+          }
+          
+          .submenu > ul > li :hover .submenu2{
+                   display: block;
+          }
           .rowheight{
 
-          height: 222px;
+                    height: 222px;
 
           }
           .bg{
                     background-color: #fff;
           }
+          .height{
+                    height: 344px;
+          }
+
           
 </style>
 <body>
  <header>
-          <div class="container-fluid border border-info h-100 m-0 p-0 tbd">
+          <div class="container-fluid border  h-100 m-0 p-0 tbd">
                   
                     <div class="row m-0  h-100 bg ">
-                              <div class="col-8 p-0 ">
+                              <div class="col-8  tbd h-100 p-0 ">
                                <div class="logo ps-0">
                                         <img src="/img/flipkartlog.svg" alt="">
                                         <input class="" type="search  " placeholder="Search"> 
                               
                                </div>
                               </div>
-                              <div class="col-4 p-0 bg  coloum2">
-                                        <ul class="ps-0">
-                                                  <li><a href=""></a>login</li>
-                                                  <li><a href=""></a>Cart</li>
-                                                  <li><a href=""></a>Become a saller</li>
-                                                  <li class="float-end pe-2"><a href=""></a>c</li>
+                              <div class="col-4 p-0 bg tbd h-100 coloum2 col-sm-4">
+                                        <ul class="ps-3">
+                                                 <button class="btn btn-primary ">login</button>
+                                                  <li><a href=""></a>Cart <i class="fa-solid fa-cart-shopping"></i></li>
+                                                  <li><a href=""></a>Become a saller <i class="fa-solid fa-shop"></i></li>
+                                                  <li class="float-end pe-4"><a href=""></a><i class="fa-solid fa-ellipsis-vertical"></i></li>
                                         </ul>
                               </div>
                               
@@ -89,23 +202,254 @@
 
  </header>
  <div  class="main_body ">
-          <div class="container-fluid m-0 p-2 h-100">
+          <div class="container-fluid m-0 p-2  h-100">
                     <div class="row tbd headerh2 bg p-0  m-0">
-                             <ul class="ps-5  pt-3">
-                              <li><a href=""><img src="/img/0139228b2f7eb413.webp" alt=""><p>Electronics</p></a></li>
-                              <li><a href=""><img src="/img/05d708653beff580.webp" alt=""><p>Electronics</p></a></a></li>
-                              <li><a href=""><img src="/img/0d75b34f7d8fbcb3.webp" alt=""><p>Electronics</p></a></a></li>
-                              <li><a href=""><img src="/img/22fddf3c7da4c4f4.webp" alt=""><p>Electronics</p></a></a></li>
-                              <li><a href=""><img src="/img/69c6589653afdb9a.webp" alt=""><p>Electronics</p></a></a></li>
-                              <li><a href=""><img src="/img/69c6589653afdb9a.webp" alt=""><p>Electronics</p></a></a></li>
-                              <li><a href=""><img src="/img/ab7e2b022a4587dd.webp" alt=""><p>Electronics</p></a></a></li>
-                              <li><a href=""><img src="/img/dff3f7adcf3a90c6.webp" alt=""><p>Electronics</p></a></a></li>
-                              <li><a href=""><img src="/img/dff3f7adcf3a90c6.webp" alt=""><p>Electronics</p></a></a></li>
+                             <ul class="  pt-2 ps-5  ">
+                              <li><a href=""><img src="/img/0139228b2f7eb413.webp" alt=""><p>Electronics</a></li>
+                              <li><a href=""><img src="/img/05d708653beff580.webp" alt=""><p>Electronics </p></a></a>
+                             </li>
+
+                              <li><a href=""><img src="/img/0d75b34f7d8fbcb3.webp" alt=""><p>Electronics <i class="fa-solid fa-chevron-down icon"></i></p></a></a>
+                                        <div class="submenu">
+                                                  <ul class="ps-0 w-100 ">
+                                                            <li><a href="">Audio</a>
+                                                            <ul class="submenu2">
+                                                                      <li>
+                                                                                <a href="">All</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">Bluthooth Headphones</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">Wired Headphones</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">True wireless Earbuds</a>
+                                                                      </li>
+                                                            </ul></li>
+                                                            <li><a href="">Electronics GST store</a>
+                                                             <ul class="submenu3">
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                            </ul></li>
+                                                            <li><a href="">Camera & Accessories</a> <ul class="submenu2">
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                            </ul></li>
+                                                            <li><a href="">Computer Peripherals</a> <ul class="submenu2">
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                            </ul></li>
+                                                            <li><a href="">Gaming</a> <ul class="submenu2">
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                            </ul></li>
+                                                            <li><a href="">Healdth & Personal Care</a> <ul class="submenu2">
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                            </ul></li>
+                                                            <li><a href="">Laptop Accessories</a> <ul class="submenu2">
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                            </ul></li>
+                                                            <li><a href="">Laptop and Desktop</a> <ul class="submenu2">
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                            </ul></li>
+                                                            <li><a href="">Mobile Accessory</a> <ul class="submenu2">
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                            </ul></li>
+                                                            <li><a href="">Powerbank</a> <ul class="submenu2">
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                            </ul></li>
+                                                            <li><a href="">Smart Home automation</a> <ul class="submenu2">
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                            </ul></li>
+                                                            <li><a href="">Smart Wearables</a> <ul class="submenu2">
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                            </ul></li>
+                                                            <li><a href="">Storage</a> <ul class="submenu2">
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                                      <li>
+                                                                                <a href="">a</a>
+                                                                      </li>
+                                                            </ul></li>
+                                                            <li><a href="">Tablet</a> <ul class="submenu2">
+                                                                <li>
+                                                                        <a href="">All</a>
+                                                              </li>
+                                                              <li>
+                                                                        <a href="">Bluthooth Headphones</a>
+                                                              </li>
+                                                              <li>
+                                                                        <a href="">Wired Headphones</a>
+                                                              </li>
+                                                              <li>
+                                                                        <a href="">True wireless Earbuds</a>
+                                                              </li>
+                                                            </ul></li>
+
+                                                  </ul>
+                                        
+                                        </div></li>
+                              <li><a href=""><img src="/img/22fddf3c7da4c4f4.webp" alt=""><p>Electronics <i class="fa-solid fa-chevron-down icon"></i></p></a></a></li>
+                              <li><a href=""><img src="/img/69c6589653afdb9a.webp" alt=""><p>Electronics <i class="fa-solid fa-chevron-down icon"></i></p></a></a></li>
+                              <li><a href=""><img src="/img/69c6589653afdb9a.webp" alt=""><p>Electronics </p></a></a></li>
+                              <li><a href=""><img src="/img/ab7e2b022a4587dd.webp" alt=""><p>Electronics </p></a></a></li>
+                              <li><a href=""><img src="/img/dff3f7adcf3a90c6.webp" alt=""><p>Electronics <i class="fa-solid fa-chevron-down icon"></i></p></a></a></li>
+                              <li><a href=""><img src="/img/dff3f7adcf3a90c6.webp" alt=""><p>Electronics <i class="fa-solid fa-chevron-down icon"></i></p></a></a></li>
                              
                     </ul>
 
 
                     </div>
+                     <div class="row tbd height  bg p-0 mt-2 m-0">
+                            
+
+                    </div>
+                    <div class="row tbd height  bg p-0 mt-2 m-0">
+                             <div class="col-2 tbd">A</div>
+                             <div class="col-2 tbd">A</div>
+                             <div class="col-2 tbd">A</div>
+                             <div class="col-2 tbd">A</div>
+                             <div class="col-2 tbd">A</div>
+                             <div class="col-2 tbd">A</div>
+                            
+
+                    </div>
+                    <div class="row tbd height  bg p-0 mt-2 m-0">
+                              <div class="col-2 tbd">A</div>
+                              <div class="col-2 tbd">A</div>
+                              <div class="col-2 tbd">A</div>
+                              <div class="col-2 tbd">A</div>
+                              <div class="col-2 tbd">A</div>
+                              <div class="col-2 tbd">A</div>
+                             
+ 
+                     </div>
+
 
           </div>
 
